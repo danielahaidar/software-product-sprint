@@ -2,18 +2,71 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Daniela Haidar's Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
   </head>
   <body>
     <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
+      <h1>Daniela Haidar's Portfolio</h1>
+      <img width="250px" src="/images/dani_sps.jpeg"/>
+
+      <h2>About Myself</h2>
+      <p>I'm a junior at Brown University pursuing a double concentration in Computer Science (focus on AI/ML and Data Science) and Economics. I'm from Sao Paulo, Brazil, but have been living in Providence, Rhode Island for the past three years.</p>
+
+      <h2>Experience</h2>
+      <div class="flex-container">
+      <table style="max-width:100%">
+         <tr>
+          <td style="width:25%"><strong>Spring 2021</strong></td>
+          <td style="width:75%"><strong>Undergraduate Teaching Assistant</strong> @ <a href="http://brown.edu/" target="_blank">
+            Brown University</a></td>
+        </tr>
+          <td style="width:25%"></td>
+          <td style="width:75%"><i>TA for the course 'CSCI 1951a - Data Science'. I revise and grade assignments, hold hours to help students understand the material and assist them in debugging their programs.</i></td>
+        </tr>
+        <tr>
+          <td style="width:25%"><strong>Since Fall 2019</strong></td>
+          <td style="width:75%"><strong>Undergraduate Research Assistant</strong> @ <a href="http://brown.edu/Research/AI/" target="_blank">
+            Brown University's AI Lab</a></td>
+        </tr>
+        <tr>
+          <td style="width:25%"></td>
+          <td style="width:75%"><i>Under the guidance of Professor Carsten Eickhoff, I work with machine learning techniques
+            and neural network models in order to improve electrical-stimulation treatments.</i></td>
+        </tr>
+        <tr>
+          <td style="width:25%"><strong>Summer 2020</strong></td>
+          <td style="width:75%"><strong>Data Science Intern</strong> @ <a href="https://www.vioo.world/" target="_blank">Vioo</a></td>
+        </tr>
+        <tr>
+          <td style="width:25%"></td>
+          <td style="width:75%"><i>Defined OKR metrics for the data team; assisted in the selection of new members; restructured
+            and cleaned our user database; designed PowerBi dashboards to help different teams keep track of company growth and
+            engagement.</i></td>
+        </tr>
+        <tr>
+          <td style="width:25%"><strong>Summer 2019</strong></td>
+          <td style="width:75%"><strong>Summer Analyst</strong> @ <a href="https://www.bancoplural.com/" target="_blank">Banco Plural</a></td>
+        </tr>
+        <tr>
+          <td style="width:25%"></td>
+          <td style="width:75%"><i>Investment Banking: Worked on valuations and pitches. Business Intelligence: Collected and
+            analyzed data, automated excel files using VBA. Trading: Rotation on renting, futures, fixed income, options and
+            risk.</i></td>
+        </tr>
+      </table>
+    </div>
+
+    <h2>SPS Experience</h2>
+    <p>This Spring 2021, I'm participating in an invite-only Google program called Software Product Sprint. This portfolio is actually part of it! During this first week we were tasked to create the client side of it. I can't wait to see what my team will be working on the next few weeks.</p>
+
+    <h2>Quote Generator</h2>
+      <p>Click here to get a random quote from my favorite TV show, Gilmore Girls:</p>
+      <button onclick="addRandomGreeting()">Give me a quote!</button>
       <div id="greeting-container"></div>
     </div>
+    <br>
+    <br>
   </body>
 </html>
