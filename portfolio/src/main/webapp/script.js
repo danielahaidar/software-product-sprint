@@ -26,3 +26,19 @@ function addRandomGreeting() {
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
 }
+
+// fetching json
+async function showFact() {
+  const responseFromServer = await fetch('/hello');
+  const fact = await responseFromServer.json();
+
+
+  // Pick a random fact.
+  const possibilities = [fact.fact0, fact.fact1, fact.fact2];
+
+  const factText = possibilities[Math.floor(Math.random() * possibilities.length)];
+  const factContainer = document.getElementById('fact-container');
+  factContainer.innerText = factText;
+}
+
+
