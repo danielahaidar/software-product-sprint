@@ -28,7 +28,7 @@ function addRandomGreeting() {
 }
 
 // fetching json
-async function showGreeting() {
+async function showFact() {
   const responseFromServer = await fetch('/hello');
   const fact = await responseFromServer.json();
 
