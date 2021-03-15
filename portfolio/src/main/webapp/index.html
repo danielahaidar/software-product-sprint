@@ -17,7 +17,14 @@
         Get a random fact about myself!
       </button>
         <p id="fact-container"></p>
-      
+        
+      <p>Type me a message and I'll perform sentiment analysis on it!</p>
+      <form method="POST" action="/sentiment">
+        <textarea name="message"></textarea>
+        <br/>
+        <button>Submit</button>
+      </form>
+    
         <h2>Experience</h2>
       <div class="flex-container">
       <table style="max-width:100%">
